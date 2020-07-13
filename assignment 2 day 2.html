@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function day()
+        {
+            var getDate = new Date();
+            a = getDate.getDay();
+            switch (a){
+                case 0:
+                    return "sunday"
+                case 1:
+                    return "monday"
+                case 2:
+                    return "tuesday"
+                case 3:
+                    return "wednesday"
+                case 4:
+                    return "thursday"
+                case 5:
+                    return "friday"
+                case 6:
+                    return "saturday"
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <p id="testa"></p>
+    <br>
+    <p id="testb"></p>
+    <br>
+    <p id="testc"></p>
+    
+    <script>
+        var getDate = new Date();
+        document.getElementById("testa").innerHTML="The Date is "+ getDate.getDate() + "/" + getDate.getMonth() + "/" + getDate.getFullYear();
+        document.getElementById("testb").innerHTML="The Day is " + day();
+        document.getElementById("testc").innerHTML="Current time is  " + getDate.getHours() + ":" + getDate.getMinutes() + ":" +  getDate.getSeconds();
+    </script>
+    
+    <button onclick="myfun()">print this page</button>
+    
+    <script type="text/javascript">
+        function myfun()
+        {
+            window.print();
+        }
+    </script>
+    
+</body>
+</html>

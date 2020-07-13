@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Different Date formates</h2>
+    <p id="testa"></p>
+    <br>
+    <p id="testb"></p>
+    <br>
+    <p id="testc"></p>
+    <br>
+    <p id="testd"></p>
+
+    <script>
+        var getDate = new Date();
+        document.getElementById("testa").innerHTML="1."  + getDate.getDate() + "-" + getDate.getMonth() + "-" + getDate.getFullYear();
+        document.getElementById("testb").innerHTML="2. " + getDate.getDate() + "/" + getDate.getMonth() + "/" + getDate.getFullYear();
+        document.getElementById("testc").innerHTML="3. " + getDate.getMonth() + "-" + getDate.getDate() + "-" + getDate.getFullYear();
+        document.getElementById("testd").innerHTML="4. " + getDate.getMonth() + "/" + getDate.getDate() + "/" + getDate.getFullYear();
+    </script>
+</body>
+</html>

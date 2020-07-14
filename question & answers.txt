@@ -1,0 +1,35 @@
+Q.Explore and explain the various methods in console function
+  Explain them
+
+
+->1.console.clear(); - Clears messages from the console window, including script-error messages, and also clears script that appears in the console window. 
+		     Does not clear script that you entered into the console input prompt
+
+  2.console.error("error message"); - Sends message to the console window. The message text is red and prefaced by an error symbol.
+                                    Objects that are passed by using the command are converted to a string value.
+
+  3.console.log(Date()); - Sends message to the console window.
+                         If you pass an object, this command sends that object to the console window and displays it in an object visualizer. 
+			 You can use the visualizer to inspect properties in the console window.
+
+  4.console.warn("warning message"); - Sends message to the console window, prefaced by a warning symbol.
+				     Objects that are passed by using the command are converted to a string value.
+
+  5.console.error("error message"); - Sends message to the console window. The message text is red and prefaced by an error symbol.
+				    Objects that are passed by using the command are converted to a string value.
+
+
+Q.Write the difference between var, let and const with code examples
+
+->var declarations are globally scoped or function scoped while let and const are block scoped. 
+  var variables can be updated and re-declared within its scope; 
+  let variables can be updated but not re-declared; 
+  const variables can neither be updated nor re-declared.
+
+
+Q.Write a brief intro on available data types in Javascript.
+
+->Data types describe the different types or kinds of data that we're gonna be working with and storing in variables. 
+  In Javascript, there are five basic, or primitive, types of data. 
+  The five most basic types of data are strings, numbers, booleans, undefined, and null. 
+  We refer to these as primitive data types.
